@@ -1,0 +1,280 @@
+/************* Site Defaults *************/
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+/* TO DO: Apply flex-box to all elements with the .flex class */
+
+.flex {
+    display: flex;
+}
+
+/************* Site-Wide Text Styling *************/
+
+/* TO DO:
+    - First-level headings should be 48px in size, centered both vertically and horizontally.
+    - Second-level headings have a font size of 36px, with 12px of space beneath them.
+    - Elements with the .large-text class use a font size of 24px.
+    - Elements with the .fake-button class:
+        - Mustard yellow background (#E5AF42)
+        - Center aligned
+        - Line-height of 3
+        - Solid black border (1px)
+    - All anchor elements should:
+        - Remove underline
+        - Set color to black
+        - Anchors in main and footer sections will be underlined on hover.
+    - Hover states for .fake-button and .blue-hover classes:
+        - Add underline
+        - Set background-color to cornflower blue (#4278e5)
+        - Change text color to white
+        - Set cursor to pointer
+*/
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 1;
+    margin: 0;
+    margin-left: 100px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.index a:hover {
+    color: white;
+    background-color: #4278e5;
+    text-decoration: underline;
+}
+
+header {
+    background-color: #E5AF42;
+    height: 150px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    margin-top: 50px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+
+/************* Header/Footer Styling *************/
+
+/* TO DO:
+    - Match header and footer background color with mustard yellow.
+    - Header should be 150px in height.
+    - Header image sizing: 100px square, with 25px margin on all sides.
+    - Center h1 in the header.
+    - Maintain 25px margin between header and main sections, and 50px margin between main and footer.
+    - Footer specifications: 60px height, font-weight of 200, and vertically and horizontally centered content.
+*/
+header img {
+    width: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+footer {
+    height: 60px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5AF42;
+}
+
+/************* Index Page *************/
+
+/* TO DO:
+    - Designate a 2-column layout: text on the left, image on the right (300px wide).
+    - Maintain 25px gap between image and text column, which will occupy remaining space.
+    - Image requires 50px margin below.
+    - H2 line-height matches its font size.
+    - Provide 12px of margin below each paragraph.
+    - Set each fake-button's width to 250px, with 150px margin between them.
+    - Center the pair of fake-buttons on the page.
+*/
+
+.about-us {
+    margin-right: 25px;
+}
+
+main img {
+    width: 300px;
+    margin-top: 50px;
+}
+
+h2 {
+    line-height: 36px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/************* Bookings Page *************/
+
+/* TO DO:
+    - Content width of booking-page: 600px, center content.
+    - Font size: 18px.
+    - Below day-selectors: 12px spacing; between list items: 20px spacing.
+    - List items width: 60px, with solid black border (1px).
+    - Small-buttons padding of 5px, and black border.
+    - Top-margin class: 24px spacing above, 12px below.
+    - Clear days button width: 200px.
+    - .clicked class changes elements to mustard yellow.
+    - All items should be centered.
+*/
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.day-selector {
+    width: 400px;
+    margin: 0 auto;
+}
+
+li {
+    width: 60px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.small-button {
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.clear-days-button {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.clicked {
+    background-color: #FFDB58;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.fake-button {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    border: 1px solid black;
+    width: 200px;
+    justify-content: center;
+}
+
+.booking-page {
+    text-align: center;
+}
+
+.booking-page .fake-button.blue-hover:hover {
+    text-decoration: underline;
+    background-color: blue;
+    color: white;
+}
+
+.booking-page .fake-button {
+    margin-left: 350px;
+}
+
+/************* Contact Page *************/
+/* TO DO:
+    - Define main section of the .contact page as 420px tall and centered.
+    - Create 2 columns: label column (150px, right-aligned) and input column (300px).
+    - Maintain 24px spacing between columns.
+    - Set textarea element height to 150px.
+    - Apply page-wide font and line-height styling (font size 16px).
+    - 24px of spacing below each form input, textarea, and button elements.
+    - Button edges should align perfectly with the text-area element.
+*/
+
+.contact {
+    display: flex;
+    height: 420px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact, h2 {
+    margin-bottom: 50px;
+}
+
+label {
+    width: 150px;
+    justify-content: flex-end;
+}
+
+input {
+    width: 300px;
+    padding: 24px;
+}
+
+.flex {
+    margin-bottom: 20px;
+}
+
+.fake-button {
+    font-size: 16px;
+    padding: 24px;
+}
+
+.contact .fake-button {
+    background-color: #FFDB58;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
